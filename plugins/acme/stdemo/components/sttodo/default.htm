@@ -1,0 +1,10 @@
+{% set tasks = stTodoList.tasks %}
+<ul>
+    {% for task in tasks %}
+    <li>
+        {{task}}
+
+    </li>
+    {% endfor %}
+</ul>
+<h1>Task assigned to: {{__SELF__.name}} </h1>

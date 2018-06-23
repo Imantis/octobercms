@@ -1,0 +1,10 @@
+1.0.1: First version of stDemo
+1.0.2:
+ Create ToDo task CreateTasksTable
+ create_tasks_table.php
+1.0.3:
+ REPEAT
+ create_tasks_table.php
+1.0.4:
+    - 'First version of propertyextender'
+    - create_tasks_table.php

@@ -70,14 +70,22 @@ class __TwigTemplate_03db3070fd178cc8165894c6ba340c27e4c504f9ac0c1a05efa0708b269
         echo "\"><a href=\"";
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("account");
         echo "\">Account</a></li>
-                ";
+                <li class=\"";
         // line 20
+        if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", array()), "id", array()) == "blog")) {
+            echo "active";
+        }
+        echo "\"><a href=\"";
+        echo $this->extensions['Cms\Twig\Extension']->pageFilter("blog");
+        echo "\">Blog</a></li>
+                ";
+        // line 21
         if (($context["user"] ?? null)) {
-            // line 21
+            // line 22
             echo "                    <li><a href=\"#\" data-request=\"onLogout\">Logout</a></li>
                 ";
         }
-        // line 23
+        // line 24
         echo "            </ul>
         </div>
     </div>
@@ -96,7 +104,7 @@ class __TwigTemplate_03db3070fd178cc8165894c6ba340c27e4c504f9ac0c1a05efa0708b269
 
     public function getDebugInfo()
     {
-        return array (  81 => 23,  77 => 21,  75 => 20,  67 => 19,  59 => 18,  51 => 17,  43 => 16,  35 => 11,  23 => 1,);
+        return array (  89 => 24,  85 => 22,  83 => 21,  75 => 20,  67 => 19,  59 => 18,  51 => 17,  43 => 16,  35 => 11,  23 => 1,);
     }
 
     public function getSourceContext()
@@ -120,6 +128,7 @@ class __TwigTemplate_03db3070fd178cc8165894c6ba340c27e4c504f9ac0c1a05efa0708b269
                 <li class=\"{% if this.page.id == 'ajax' %}active{% endif %}\"><a href=\"{{ 'ajax'|page }}\">AJAX framework</a></li>
                 <li class=\"{% if this.page.id == 'plugins' %}active{% endif %}\"><a href=\"{{ 'plugins'|page }}\">Plugin components</a></li>
                 <li class=\"{% if this.page.id == 'account' %}active{% endif %}\"><a href=\"{{ 'account'|page }}\">Account</a></li>
+                <li class=\"{% if this.page.id == 'blog' %}active{% endif %}\"><a href=\"{{ 'blog'|page }}\">Blog</a></li>
                 {% if user %}
                     <li><a href=\"#\" data-request=\"onLogout\">Logout</a></li>
                 {% endif %}

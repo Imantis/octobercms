@@ -1,7 +1,4 @@
-1529664227a:1:{s:15:"site/header.htm";a:7:{s:8:"fileName";s:15:"site/header.htm";s:7:"content";s:1556:"[session]
-security = "all"
-
-[viewBag]
+1529780646a:1:{s:15:"site/header.htm";a:6:{s:8:"fileName";s:15:"site/header.htm";s:7:"content";s:1645:"[viewBag]
 ==
 <!-- Nav -->
 <nav id="layout-nav" class="navbar navbar-inverse navbar-fixed-top navbar-autohide" role="navigation">
@@ -22,13 +19,14 @@ security = "all"
                 <li class="{% if this.page.id == 'ajax' %}active{% endif %}"><a href="{{ 'ajax'|page }}">AJAX framework</a></li>
                 <li class="{% if this.page.id == 'plugins' %}active{% endif %}"><a href="{{ 'plugins'|page }}">Plugin components</a></li>
                 <li class="{% if this.page.id == 'account' %}active{% endif %}"><a href="{{ 'account'|page }}">Account</a></li>
+                <li class="{% if this.page.id == 'blog' %}active{% endif %}"><a href="{{ 'blog'|page }}">Blog</a></li>
                 {% if user %}
                     <li><a href="#" data-request="onLogout">Logout</a></li>
                 {% endif %}
             </ul>
         </div>
     </div>
-</nav>";s:5:"mtime";i:1529399775;s:6:"markup";s:1510:"<!-- Nav -->
+</nav>";s:5:"mtime";i:1529754624;s:6:"markup";s:1630:"<!-- Nav -->
 <nav id="layout-nav" class="navbar navbar-inverse navbar-fixed-top navbar-autohide" role="navigation">
     <div class="container">
         <div class="navbar-header">
@@ -47,10 +45,11 @@ security = "all"
                 <li class="{% if this.page.id == 'ajax' %}active{% endif %}"><a href="{{ 'ajax'|page }}">AJAX framework</a></li>
                 <li class="{% if this.page.id == 'plugins' %}active{% endif %}"><a href="{{ 'plugins'|page }}">Plugin components</a></li>
                 <li class="{% if this.page.id == 'account' %}active{% endif %}"><a href="{{ 'account'|page }}">Account</a></li>
+                <li class="{% if this.page.id == 'blog' %}active{% endif %}"><a href="{{ 'blog'|page }}">Blog</a></li>
                 {% if user %}
                     <li><a href="#" data-request="onLogout">Logout</a></li>
                 {% endif %}
             </ul>
         </div>
     </div>
-</nav>";s:4:"code";N;s:7:"session";a:1:{s:8:"security";s:3:"all";}s:7:"viewBag";a:0:{}}}
+</nav>";s:4:"code";N;s:7:"viewBag";a:0:{}}}
