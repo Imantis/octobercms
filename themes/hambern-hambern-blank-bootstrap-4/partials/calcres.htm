@@ -1,0 +1,11 @@
+[viewBag]
+==
+{% if answer %}
+    <span class="lead">
+        Res = <span class="label label-success">{{ answer }}</span>
+    </span>
+{% else %}
+    <span class="text-muted">
+        Click the "=" button
+    </span>
+{% endif %}
