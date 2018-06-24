@@ -1,0 +1,8 @@
+static-pages:
+    home: {  }
+    projects:
+        projects-website: {  }
+        projects-application: {  }
+    about: {  }
+    contact-us: {  }
+    terms: {  }

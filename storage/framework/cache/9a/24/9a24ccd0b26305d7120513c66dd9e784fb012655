@@ -1,6 +1,6 @@
-1529780646a:1:{s:8:"blog.htm";a:11:{s:8:"fileName";s:8:"blog.htm";s:7:"content";s:564:"title = "blog"
+1529787808a:1:{s:8:"blog.htm";a:11:{s:8:"fileName";s:8:"blog.htm";s:7:"content";s:649:"title = "blog"
 url = "/blog"
-layout = "default"
+layout = "stacic-layout"
 is_hidden = 0
 
 [blogPosts]
@@ -16,6 +16,13 @@ slug = "{{ :slug }}"
 displayEmpty = 0
 categoryPage = "blog-category"
 ==
+<?php
+function onInit()
+{
+    $this['activeMenuItem'] = 'blog';
+}
+?>
+==
 <div class="rov">
     <div class="col-sm-8"> 
         {% component 'blogPosts' %}
@@ -26,7 +33,7 @@ categoryPage = "blog-category"
     <div class="col-sm-4">
         {% component 'blogCategories' %}
     </div>
-</div>";s:5:"mtime";i:1529752753;s:6:"markup";s:216:"<div class="rov">
+</div>";s:5:"mtime";i:1529787204;s:6:"markup";s:216:"<div class="rov">
     <div class="col-sm-8"> 
         {% component 'blogPosts' %}
     </div>
@@ -36,4 +43,7 @@ categoryPage = "blog-category"
     <div class="col-sm-4">
         {% component 'blogCategories' %}
     </div>
-</div>";s:4:"code";N;s:5:"title";s:4:"blog";s:3:"url";s:5:"/blog";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:9:"blogPosts";a:6:{s:10:"pageNumber";s:11:"{{ :page }}";s:12:"postsPerPage";s:2:"10";s:14:"noPostsMessage";s:14:"No posts found";s:9:"sortOrder";s:17:"published_at desc";s:12:"categoryPage";s:13:"blog-category";s:8:"postPage";s:9:"blog-post";}s:14:"blogCategories";a:3:{s:4:"slug";s:11:"{{ :slug }}";s:12:"displayEmpty";s:1:"0";s:12:"categoryPage";s:13:"blog-category";}}}
+</div>";s:4:"code";s:62:"function onInit()
+{
+    $this['activeMenuItem'] = 'blog';
+}";s:5:"title";s:4:"blog";s:3:"url";s:5:"/blog";s:6:"layout";s:13:"stacic-layout";s:9:"is_hidden";s:1:"0";s:9:"blogPosts";a:6:{s:10:"pageNumber";s:11:"{{ :page }}";s:12:"postsPerPage";s:2:"10";s:14:"noPostsMessage";s:14:"No posts found";s:9:"sortOrder";s:17:"published_at desc";s:12:"categoryPage";s:13:"blog-category";s:8:"postPage";s:9:"blog-post";}s:14:"blogCategories";a:3:{s:4:"slug";s:11:"{{ :slug }}";s:12:"displayEmpty";s:1:"0";s:12:"categoryPage";s:13:"blog-category";}}}

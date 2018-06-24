@@ -57,4 +57,7 @@
   'RainLab\\Blog\\Components\\RssFeed' => 'plugins\\rainlab\\blog\\components\\RssFeed.php',
   'acme\\stdemo\\Plugin' => 'plugins\\acme\\stdemo\\Plugin.php',
   'Acme\\StDemo\\Components\\sttodo' => 'plugins\\acme\\stdemo\\components\\sttodo.php',
+  'Acme\\Stdemo\\Models\\Task' => 'plugins\\acme\\stdemo\\models\\Task.php',
+  'RainLab\\Pages\\FormWidgets\\MenuItems' => 'plugins\\rainlab\\pages\\formwidgets\\MenuItems.php',
+  'Rainlab\\Pages\\FormWidgets\\MenuItemSearch' => 'plugins\\rainlab\\pages\\formwidgets\\MenuItemSearch.php',
 );

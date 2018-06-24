@@ -1,0 +1,24 @@
+name: 'Main menu - right'
+items:
+    -
+        title: 'Contact Us'
+        nesting: '0'
+        type: static-page
+        code: ''
+        reference: contact-us
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Terms
+        nesting: '0'
+        type: static-page
+        code: ''
+        reference: terms
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'

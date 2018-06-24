@@ -1,10 +1,19 @@
-{% set tasks = stTodoList.tasks %}
-<ul>
-    {% for task in tasks %}
-    <li>
-        {{task}}
-
-    </li>
-    {% endfor %}
-</ul>
-<h1>Task assigned to: {{__SELF__.name}} </h1>
+{# set tasks = __SELF__.tasks #}
+<form data-request="{{ __SELF__ }}::onAddItem"
+      data-request-success="$('#newItem').val('')"
+      data-request-update="'{{ __SELF__ }}::tasks': '#result'">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h1>Task assigned to: {{ __SELF__.name }}</h1>
+        </div>
+        <div class="panel-body">
+            <div class="input-group">
+                <input type="text" id="newItem" name="newTask" value="" class="form-control"/>
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn-primary">Add</button>
+                </span>
+            </div>
+            {% partial __SELF__ ~ '::tasks' tasks=__SELF__.tasks %}
+        </div>
+    </div>
+</form>
